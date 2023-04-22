@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  jupyter:
+    image: jupyterpytorch
+    container_name: jupyter
+    stdin_open: true
+    tty: true
+    volumes:
+      - /home/marczhu/AI_stockprice:/home/jovyan/work
+    ports:
+      - 6969:8888
